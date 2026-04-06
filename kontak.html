@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Prayuda Adhitama</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">
+                <i class="fas fa-user-graduate"></i> Prayuda Adhitama
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="profil.html" class="nav-link">👤 Profil</a></li>
+                <li><a href="kontak.html" class="nav-link active">✉️ Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="kontak-main">
+        <div class="container">
+            <section class="kontak-info">
+                <h1><i class="fas fa-phone"></i> Hubungi Saya</h1>
+                <p>Siap diskusi soal gaming, startup, atau project coding!</p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>pryudaadhitama@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telepon</h3>
+                        <p>082367449173</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Alamat</h3>
+                        <p>Pematang Bandar, Simalungun<br>Sumatera Utara</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2>Kirim Pesan</h2>
+                <form id="kontakForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Nama</label>
+                        <input type="text" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-comment"></i> Pesan</label>
+                        <textarea name="pesan" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Prayuda Adhitama | Teknik Informatika</p>
+    </footer>
+
+    <script>
+        document.getElementById('kontakForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Pesan berhasil dikirim! Saya akan balas dalam 24 jam.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
